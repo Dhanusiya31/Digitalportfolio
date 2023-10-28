@@ -1,0 +1,183 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #191970; /* Midnight Blue */
+    color: #fff; /* White */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*.cover {
+    position: absolute;
+}*/
+
+.cover img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.zoom {
+    transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    margin-right: 20px;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip:hover {
+    transform: rotateY(90deg);
+}
+
+.profile-details {
+    text-align: left;
+}
+
+.profile-details h1 {
+    text-align: left;
+    font-size: 36px;
+}
+
+.profile-details h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #FFFFF7;
+}
+
+/* Content section styles */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    background-color: #7b68ee; /* Medium Slate Blue */
+    border-radius: 5px;
+    margin-right: 10px;
+    animation: fadeIn 1s ease; /* Add fade-in animation */
+}
+
+.box {
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+        .section-content {
+            background-color: #fff;
+            color: #000;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #547;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+/* Footer styles */
+footer {
+    background-color: #000; /* Black */
+    padding: 20px;
+    text-align: left;
+}
+
+footer h2 {
+    font-size: 24px;
+}
+
+footer p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff; /* White */
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
